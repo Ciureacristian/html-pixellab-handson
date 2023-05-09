@@ -22,6 +22,7 @@
 
 .legend {
   position: absolute;
+  top: -4x;
   top: -8px;
   background-color: gray;
   border: 1px solid red;

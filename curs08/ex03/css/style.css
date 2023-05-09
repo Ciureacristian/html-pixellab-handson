@@ -17,3 +17,52 @@
   padding-left: 13px;
   padding-right: 21px;
 }
+
+.container {
+  width: 100%;
+  height: auto;
+  border: green 3px solid;
+  padding: 15px;
+}
+
+.green {
+  background-color: green;
+  width: 500px;
+  height: 220px;
+  border: 1px solid black;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 19px;
+  padding-right: 19px;
+  margin: 0 auto;
+}
+
+.purple {
+  background-color: purple;
+  border: 2px green dotted;
+  border-radius: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 0;
+  padding-right: 15px;
+}
+
+.turquoise {
+  background-color: turquoise;
+  border: blue 1px solid;
+  border-radius: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.transparent {
+  width: 300px;
+  border: red 2px solid;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}

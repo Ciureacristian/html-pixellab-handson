@@ -43,3 +43,20 @@ ol + h2 {
 .random ~ p {
   padding: 10px 12px;
 }
+
+h3 + p {
+  margin-top: 0;
+}
+
+.last-list ~ ul a {
+  color: yellow;
+}
+
+.my-list > li {
+  text-decoration: underline;
+}
+
+.nested ul > li > ul > li > a {
+  display: inline-block;
+  padding: 5px;
+}

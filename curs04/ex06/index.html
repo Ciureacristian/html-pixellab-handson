@@ -16,7 +16,27 @@
 </head>
 
 <body>
-  <!-- insert code -->
+  <h1>New Address</h1>
+  <p>
+    <img
+      src="./images/new_address.jpg"
+      alt="New address"
+    >
+  </p>
+  <p>
+    <b> Please provide a valid address</b>, otherwise we will not be able to send your stuff.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <br> <br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
 
   <h2>Useful links</h2>
   <ul>
@@ -28,25 +48,65 @@
         title="Maps"
       >https://www.google.com/maps</a>
     </li>
-
     <li>
       <a
         href="https://www.coduripostale.com"
         target="_blank"
         rel="noopener noreferrer"
-        title="Coduri postale"
+        title="Coduri Postale"
       >https://www.coduripostale.com</a>
     </li>
   </ul>
+  <h2>Address Form</h2>
 
-  <!-- insert code -->
 
   <form>
     <fieldset>
       <legend>Address Information:</legend>
-
-      <!-- insert code -->
-
+      <label>Title:</label>
+      <label for="male">Mr</label>
+      <input
+        type="radio"
+        id="male"
+        name="gender"
+        value="male"
+        checked
+      >
+      <label for="female">Mr</label>
+      <input
+        type="radio"
+        id="female"
+        name="gender"
+        value="female"
+        checked
+      >
+      <label for="na">Unspecified</label>
+      <input
+        type="radio"
+        id="na"
+        name="gender"
+        value="na"
+        checked
+      > <br>
+      <label for="Name">*Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="Name"
+        title="Name"
+        placeholder="Name"
+        required
+      > <br>
+      <label for="surname">*Surname:</label>
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        placeholder="Surname"
+        required
+      >
+      <br>
+      <!-- insert code-->
       <label for="state">*State:</label>
       <select
         name="state"
@@ -55,11 +115,9 @@
       >
         <option value="">--State--</option>
         <option value="newYork">New York</option>
-        <option value="vermont">Vermont</option>
+        <option value="alabama">Alabama</option>
         <option value="miami">Miami</option>
       </select>
-
-      <!-- insert code -->
     </fieldset>
   </form>
 

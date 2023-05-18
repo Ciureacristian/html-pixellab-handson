@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  >
+  <title>Bootstrap02</title>
+</head>
+
+<body>
+  <div class="container">
+    <p>
+      <a
+        href="https://google.com"
+        title="Home"
+      >Home</a> *
+
+      <a
+        href="/"
+        title="Place Holder"
+      > <b>Place Holder</b> </a> *
+
+      <a
+        href="/"
+        title="Customer Service"
+      >Customer Service</a> *
+
+      <a
+        href="/"
+        title="Contact"
+      >Contact</a>
+  </div>
+  </p>
+
+  <h1>Place Order</h1>
+
+  <p>This is the <b>guest checkout</b></p>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <h2>Order Now</h2>
+  <p class="text-center">
+    On our website <i>no account is needed</i>.
+  </p>
+
+  <ol>
+    <li>First we need some info about yourself. <b>Don’t forget to provide a phone</b>.</li>
+    <li>Then we need your <i>real</i> shipping address.</li>
+    <li>Finally, your credit card information</li>
+  </ol>
+
+  <form class="container">
+    <div class="row">
+      <fieldset class="col-4">
+        <legend>Personal Information</legend>
+        <div>
+          <label>Title:</label>
+          <label for="male">Mr</label>
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            checked
+          >
+          <label for="female">Ms</label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+          >
+          <label for="na">Unspecified</label>
+          <input
+            type="radio"
+            id="na"
+            name="gender"
+            value="na"
+          ><br>
+          <label for="name">*Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            title="name"
+            placeholder="Name"
+            required
+          ><br>
+          <label for="surname">*Surname:</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Surname"
+            required
+          ><br>
+
+          <label for="email">*Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          ><br>
+          <label for="phone">*Phone:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            required
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="col-4">
+
+        <legend>Address</legend>
+
+        <div class="input-group">
+          <label
+            for="address-name"
+            class="input-group-text"
+          >*Name:</label>
+          <input
+            type="text"
+            name="address-name"
+            id="address-name"
+            title="address-name"
+            placeholder="Name"
+            required
+          ><br>
+          <label
+            for="address-surname"
+            class="input-group-text"
+          >*Surname:</label>
+          <input
+            type="text"
+            name="address-surname"
+            id="address-surname"
+            placeholder="Surname"
+            required
+          ><br>
+
+          <label
+            for="address-phone"
+            class="input-group-text"
+          >*Phone:</label>
+          <input
+            type="tel"
+            name="address-phone"
+            id="address-phone"
+            placeholder="Phone"
+            required
+          ><br>
+
+          <label
+            for="address1"
+            class="input-group-text"
+          >*Adress Line 1:</label>
+          <input
+            type="text"
+            name="address1"
+            id="address1"
+            placeholder="Address Line 1"
+            required
+          ><br>
+
+          <label
+            for="address2"
+            class="input-group-text"
+          >Adress Line2</label>
+          <input
+            type="text"
+            name="address2"
+            id="address2"
+            placeholder="Address Line 2"
+            required
+          ><br>
+
+          <label
+            for="city"
+            class="input-group-text"
+          >*City</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="City"
+            required
+          ><br>
+          <div class="input-group">
+            <label
+              for="state"
+              class="input-group-text"
+            >*State:</label>
+            <select
+              name="address-state"
+              id="address-state"
+              class="form-control"
+            >
+              <option value="">--State--</option>
+              <option value="newYork">New York</option>
+              <option value="alabama">Alabama</option>
+              <option value="miami">Miami</option>
+            </select>
+          </div>
+          <label
+            for="postcode"
+            class="input-group-text"
+          >*Postcode</label>
+          <input
+            type="text"
+            name="postcode"
+            id="postcode"
+            placeholder="Postcode"
+            required
+          >
+        </div>
+    </div>
+    </fieldset>
+
+    <fieldset class="col-4">
+      <div class="row">
+        <legend>Card Information</legend>
+        <div>
+          <label for="card-number">*Card Number</label>
+          <input
+            type="text"
+            name="card-number"
+            id="card-number"
+            placeholder="Card Number"
+            required
+          ><br>
+
+          <label for="card-name">*Name on card</label>
+          <input
+            type="text"
+            name="card-name"
+            id="card-name"
+            placeholder="Name on card"
+            required
+          ><br>
+          <label for="card-expiry-month">*Expiry Month</label>
+          <select
+            name="card-expiry-month"
+            id="card-expiry-month"
+            required
+          ><br>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+          </select><br>
+          <label for="card-expiry-year">*Expiry Year</label>
+          <select
+            name="card-expiry-year"
+            id="card-expiry-year"
+            required
+          ><br>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+          </select><br>
+          <label for="card-cvv">*CVV</label>
+          <input
+            type="text"
+            name="card-cvv"
+            id="card-cvv"
+            placeholder="CVV"
+            required
+          ><br>
+          <div>
+            <span class="fst-italic">We do not store credit card information!</span>
+          </div>
+    </fieldset>
+
+    <div class=" mt-4 row">
+      <fieldset class="offset-3 col-6">
+        <legend>Form Controls</legend>
+
+        <div class="row">
+          <div class="col-6">
+            <button
+              type="submit"
+              title="Place Holder"
+              class="text-uppercase btn btn-primary"
+            >
+              Place Holder</button>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <button
+                type="reset"
+                title="Reset"
+                class="btn btn-secondary d-block w-100"
+              >
+                Reset
+              </button>
+            </div>
+      </fieldset>
+    </div>
+
+  </form>
+</body>
+
+</html>

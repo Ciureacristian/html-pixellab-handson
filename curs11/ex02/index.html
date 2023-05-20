@@ -49,7 +49,7 @@
 
   <p>This is the <b>guest checkout</b></p>
 
-  <p>
+  <p class="text-center">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -68,11 +68,15 @@
   </ol>
 
   <form class="container">
+
     <div class="row">
+
       <fieldset class="col-4">
         <legend>Personal Information</legend>
+
         <div>
           <label>Title:</label>
+
           <label for="male">Mr</label>
           <input
             type="radio"
@@ -81,6 +85,7 @@
             value="male"
             checked
           >
+
           <label for="female">Ms</label>
           <input
             type="radio"
@@ -88,41 +93,73 @@
             name="gender"
             value="female"
           >
+
           <label for="na">Unspecified</label>
           <input
             type="radio"
             id="na"
             name="gender"
             value="na"
-          ><br>
-          <label for="name">*Name:</label>
+          >
+        </div>
+
+        <div class="input-group">
+          <label
+            for="name"
+            class="input-group-text"
+          >
+            *Name:
+          </label>
           <input
+            class="form-control"
             type="text"
             name="name"
             id="name"
-            title="name"
             placeholder="Name"
             required
-          ><br>
-          <label for="surname">*Surname:</label>
+          >
+        </div>
+
+        <div class="input-group">
+          <label
+            for="surname"
+            class="input-group-text"
+          >
+            *Surname:
+          </label>
           <input
+            class="form-control"
             type="text"
             name="surname"
             id="surname"
             placeholder="Surname"
             required
-          ><br>
+          >
+        </div>
 
-          <label for="email">*Email:</label>
+        <div class="input-group">
+          <label
+            for="email"
+            class="input-group-text"
+          >*Email:
+          </label>
           <input
+            class="form-control"
             type="email"
             name="email"
             id="email"
             placeholder="Email"
             required
-          ><br>
-          <label for="phone">*Phone:</label>
+          >
+        </div>
+
+        <div class="input-group">
+          <label
+            for="phone"
+            class="input-group-text"
+          >*Phone:</label>
           <input
+            class="form-control"
             type="tel"
             name="phone"
             id="phone"
@@ -132,103 +169,133 @@
         </div>
       </fieldset>
 
-      <fieldset class="col-4">
 
+      <fieldset class="col-4">
         <legend>Address</legend>
 
         <div class="input-group">
           <label
             for="address-name"
             class="input-group-text"
-          >*Name:</label>
+          >*Name:
+          </label>
           <input
+            class="form-control"
             type="text"
             name="address-name"
             id="address-name"
-            title="address-name"
             placeholder="Name"
             required
-          ><br>
+          >
+        </div>
+
+        <div class="input-group">
           <label
             for="address-surname"
             class="input-group-text"
-          >*Surname:</label>
+          >*Surname:
+          </label>
           <input
+            class="form-control"
             type="text"
             name="address-surname"
             id="address-surname"
             placeholder="Surname"
             required
-          ><br>
+          >
+        </div>
 
+        <div class="input-group">
           <label
             for="address-phone"
             class="input-group-text"
-          >*Phone:</label>
+          >*Phone:
+          </label>
           <input
+            class="form-control"
             type="tel"
             name="address-phone"
             id="address-phone"
             placeholder="Phone"
             required
-          ><br>
+          >
+        </div>
 
+        <div class="input-group">
           <label
             for="address1"
             class="input-group-text"
-          >*Adress Line 1:</label>
+          >*Adress Line 1:
+          </label>
           <input
+            class="form-control"
             type="text"
             name="address1"
             id="address1"
             placeholder="Address Line 1"
             required
-          ><br>
+          >
+        </div>
 
+        <div class="input-group">
           <label
             for="address2"
             class="input-group-text"
-          >Adress Line2</label>
+          >Adress Line2:
+          </label>
           <input
+            class="form-control"
             type="text"
             name="address2"
             id="address2"
             placeholder="Address Line 2"
             required
-          ><br>
+          >
+        </div>
 
+        <div class="input-group">
           <label
             for="city"
             class="input-group-text"
-          >*City</label>
+          >*City:
+          </label>
           <input
+            class="form-control"
             type="text"
             name="city"
             id="city"
             placeholder="City"
             required
-          ><br>
-          <div class="input-group">
-            <label
-              for="state"
-              class="input-group-text"
-            >*State:</label>
-            <select
-              name="address-state"
-              id="address-state"
-              class="form-control"
-            >
-              <option value="">--State--</option>
-              <option value="newYork">New York</option>
-              <option value="alabama">Alabama</option>
-              <option value="miami">Miami</option>
-            </select>
-          </div>
+          >
+        </div>
+
+
+        <div class="input-group">
+          <label
+            for="state"
+            class="input-group-text"
+          >*State:
+          </label>
+          <select
+            name="address-state"
+            id="address-state"
+            class="form-control"
+          >
+            <option value="">--State--</option>
+            <option value="newYork">New York</option>
+            <option value="alabama">Alabama</option>
+            <option value="miami">Miami</option>
+          </select>
+        </div>
+
+        <div class="input-group">
           <label
             for="postcode"
             class="input-group-text"
-          >*Postcode</label>
+          >*Postcode:
+          </label>
           <input
+            class="form-control"
             type="text"
             name="postcode"
             id="postcode"
@@ -236,91 +303,194 @@
             required
           >
         </div>
-    </div>
-    </fieldset>
+      </fieldset>
 
-    <fieldset class="col-4">
-      <div class="row">
+
+      <fieldset class="col-4">
         <legend>Card Information</legend>
-        <div>
-          <label for="card-number">*Card Number</label>
+
+
+        <div class="input-group">
+          <label
+            for="card-number"
+            class="input-group-text"
+          >*Card Number:
+          </label>
           <input
+            class="form-control"
             type="text"
             name="card-number"
             id="card-number"
             placeholder="Card Number"
             required
-          ><br>
+          >
+        </div>
 
-          <label for="card-name">*Name on card</label>
+        <div class="input-group">
+          <label
+            for="card-name"
+            class="input-group-text"
+          >*Name:
+          </label>
           <input
+            class="form-control"
             type="text"
             name="card-name"
             id="card-name"
             placeholder="Name on card"
             required
-          ><br>
-          <label for="card-expiry-month">*Expiry Month</label>
+          >
+        </div>
+        <div class="input-group">
+          <label
+            for="card-expiry-month"
+            class="input-group-text"
+          >*Month:
+          </label>
           <select
+            class="form-control"
             name="card-expiry-month"
             id="card-expiry-month"
-            required
-          ><br>
+          >
+
             <option value="january">January</option>
             <option value="february">February</option>
             <option value="march">March</option>
-          </select><br>
-          <label for="card-expiry-year">*Expiry Year</label>
+            <option value="april">April</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label
+            for="card-expiry-year"
+            class="input-group-text"
+          >*Year:
+          </label>
           <select
+            class="form-control"
             name="card-expiry-year"
             id="card-expiry-year"
             required
-          ><br>
+          >
             <option value="2022">2022</option>
             <option value="2023">2023</option>
             <option value="2024">2024</option>
-          </select><br>
-          <label for="card-cvv">*CVV</label>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label
+            for="card-cvv"
+            class="input-group-text"
+          >*CVV
+          </label>
           <input
+            class="form-control"
             type="text"
             name="card-cvv"
             id="card-cvv"
             placeholder="CVV"
             required
-          ><br>
-          <div>
-            <span class="fst-italic">We do not store credit card information!</span>
-          </div>
-    </fieldset>
+          >
+        </div>
+
+        <div>
+          <span class="fst-italic">
+            We do not store credit card information!
+          </span>
+        </div>
+      </fieldset>
+    </div>
+
 
     <div class=" mt-4 row">
       <fieldset class="offset-3 col-6">
         <legend>Form Controls</legend>
+        <input
+          type="checkbox"
+          name="subscribe"
+          id="subscribe"
+        >
+        <label for="subscribe">
+          *You are required to confirm the <a href="/">term and conditions</a>.
+        </label><br>
+        <input
+          type="checkbox"
+          name="agree"
+          id="agree"
+          checked
+        >
+        <label for="agree ">
+          Agree to this and <i>we will send you emails</i>.
+        </label><br>
+        <input
+          type="checkbox"
+          name="gdpr-consent"
+          id="gdpr-consent"
+        >
+        <label for="gdpr-consent">
+          GDPR Generic Consent?
+        </label>
 
         <div class="row">
           <div class="col-6">
+
             <button
               type="submit"
               title="Place Holder"
-              class="text-uppercase btn btn-primary"
+              class="text-uppercase btn btn-primary d-block w-100"
             >
-              Place Holder</button>
+              Place Holder
+            </button>
           </div>
 
-          <div class="row">
-            <div class="col-6">
-              <button
-                type="reset"
-                title="Reset"
-                class="btn btn-secondary d-block w-100"
-              >
-                Reset
-              </button>
-            </div>
+
+          <div class="col-6">
+            <button
+              type="reset"
+              title="Reset"
+              class="btn btn-secondary d-block w-100"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
       </fieldset>
     </div>
-
   </form>
+
+  <br><br>
+
+  <p class="text-center">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <div class="container">
+    <p>
+      <a
+        href="https://google.com"
+        title="Home"
+      >Home</a> *
+
+      <a
+        href="/"
+        title="Place Holder"
+      > <b>Place Holder</b> </a> *
+
+      <a
+        href="/"
+        title="Customer Service"
+      >Customer Service</a> *
+
+      <a
+        href="/"
+        title="Contact"
+      >Contact</a>
+  </div>
+  </p>
 </body>
 
 </html>

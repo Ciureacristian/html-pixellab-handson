@@ -78,7 +78,6 @@
         id="female"
         name="gender"
         value="female"
-        checked
       >
       <label for="na">Unspecified</label>
       <input
@@ -86,14 +85,13 @@
         id="na"
         name="gender"
         value="na"
-        checked
       > <br>
-      <label for="Name">*Name:</label>
+      <label for="name">*Name:</label>
       <input
         type="text"
         name="name"
-        id="Name"
-        title="Name"
+        id="name"
+        title="name"
         placeholder="Name"
         required
       > <br>
@@ -106,7 +104,41 @@
         required
       >
       <br>
-      <!-- insert code-->
+      <label for="phone">*Phone:</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Phone"
+        required
+      >
+      <br>
+      <label for="address1">*Adress Line 1:</label>
+      <input
+        type="text"
+        name="address1"
+        id="address1"
+        placeholder="Address Line 1"
+        required
+      >
+      <br>
+      <label for="address2">*Adress Line2</label>
+      <input
+        type="text"
+        name="address2"
+        id="address2"
+        placeholder="Address Line 2"
+        required
+      >
+      <br>
+      <label for="city">*City</label>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        placeholder="City"
+        required
+      >
       <label for="state">*State:</label>
       <select
         name="state"
@@ -117,6 +149,34 @@
         <option value="newYork">New York</option>
         <option value="alabama">Alabama</option>
         <option value="miami">Miami</option>
+      </select>
+      <br>
+      <label for="postcode">*Postcode</label>
+      <input
+        type="text"
+        name="postcode"
+        id="postcode"
+        placeholder="Postcode"
+        required
+      >
+      <br>
+      <input
+        type="checkbox"
+        name="gdpr-consent"
+        id="gdpr-consent"
+      >
+      <label for="gdpr-consent">GDPR generic consent?</label>
+      <br>
+      <button
+        type="submit"
+        id="submit"
+        name="submit"
+      >Submit</button>
+      <button
+        type="reset"
+        id="reset"
+        name="reset"
+      >Reset</button>
       </select>
     </fieldset>
   </form>

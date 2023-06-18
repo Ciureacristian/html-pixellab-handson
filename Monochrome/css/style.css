@@ -128,126 +128,10 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-MediumItalic.woff2') format('woff2'),
-    url('../fonts/Roboto-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Thin.woff2') format('woff2'),
-    url('../fonts/Roboto-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-    url('../fonts/Roboto-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
-    url('../fonts/Roboto-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
-    url('../fonts/Roboto-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Julius Sans One';
-  src: url('../fonts/JuliusSansOne-Regular.woff2') format('woff2'),
-    url('../fonts/JuliusSansOne-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Black.woff2') format('woff2'),
-    url('../fonts/Roboto-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
-    url('../fonts/Roboto-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Light.woff2') format('woff2'),
-    url('../fonts/Roboto-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
-    url('../fonts/Roboto-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
-    url('../fonts/Roboto-ThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-LightItalic.woff2') format('woff2'),
-    url('../fonts/Roboto-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
-    url('../fonts/Roboto-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 /*fonts*/
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Almarai', 'Playfair Display', sans-serif;
   font-size: 16px;
   color: #707070;
 }
@@ -260,11 +144,15 @@ a {
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1278px;
+  max-width: 1356px;
 }
 /*header*/
 
 .header {
+  height: 500px;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -273,13 +161,12 @@ a {
   background: transparent url('/Monochrome/images/banner/banner.png') 0% 0%
     no-repeat padding-box;
   opacity: 1;
+  background-size: cover;
+  background-position: center center;
   max-width: 1920px;
   height: 500px;
-  margin-bottom: 16px;
   text-transform: uppercase;
-  padding: 50px;
   color: #ffffff;
-  font-weight: 300;
 }
 
 .header-secondary-inner {
@@ -288,7 +175,7 @@ a {
   padding-top: 30px;
 }
 
-.header-contact ul {
+.header-connect ul {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -297,19 +184,41 @@ a {
   height: 16px;
 }
 
-.header-contact li {
+.header-connect li {
   display: inline-flex;
+  font: normal normal normal 16px/37px Playfair Display;
+  letter-spacing: 0.24px;
 }
 
-.header-controls {
+.header-controls ul {
   display: inline-flex;
+  justify-content: space-between;
   align-items: right;
   gap: 8px;
   color: #111111;
 }
 
+/*.header-account .icon {
+  position: absolute;
+  top: 5%;
+  right: 287px;
+  transform: translate(-1px, -4px);
+}*/
+
 .header-primary {
   background-color: #2b2b2b;
+}
+
+.header-primary ul {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 20px;
+  justify-content: space-between;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-weight: 100;
+  font: normal normal normal 19px/22px Playfair Display;
+  letter-spacing: 0.28px;
 }
 
 .header-primary-inner {
@@ -322,12 +231,110 @@ a {
 }
 /*header*/
 
+.home-catalog-preview > header {
+  font-size: 35px;
+  text-align: center;
+  font: normal normal bold 35px/47px;
+  letter-spacing: 0px;
+  color: #2b2b2b;
+  opacity: 1;
+  padding: 30px;
+  font: normal normal bold 35px/47px Playfair Display;
+}
+
+.home-catalog-preview .product-titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.home-catalog-preview .product-tile-title {
+  font-size: 24px;
+  color: #2b2b2b;
+  text-align: center;
+  opacity: 1;
+  letter-spacing: 0.79px;
+  padding-top: 21px;
+  padding-bottom: 8px;
+  font: normal normal bold 22px/39px Playfair Display;
+  text-transform: uppercase;
+}
+
+.home-catalog-preview .product-tile-pricing {
+  font-size: 18px;
+  text-align: center;
+  font: normal normal normal 22px/39px Playfair Display;
+  letter-spacing: 0.79px;
+  color: #2b2b2b;
+  opacity: 1;
+}
+
+.home-catalog-preview .product-tile-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #2b2b2b;
+  border-radius: 4px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: bold;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.product-titles .product-tile-images > i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  position: relative;
+}
+/*background-color: none;
+  text-align: center;
+  font: normal normal normal 22px/22px Roboto;
+  letter-spacing: 0.88px;
+  color: #2b2b2b;
+  opacity: 1;
+  border: 1px solid #2b2b2b;
+*/
+
+.home-content {
+  display: flex;
+}
+
+.home-content > section > h1 {
+  font-size: 44px;
+  color: #2b2b2b;
+  opacity: 1;
+  float: right;
+  width: 78%;
+  padding-bottom: 40px;
+  font: normal normal bold 44px/33px Playfair Display;
+}
+
+.home-content > section > p {
+  font-size: 22px;
+  letter-spacing: 0.33px;
+  color: #2b2b2b;
+  opacity: 1;
+  float: right;
+  width: 78%;
+  font: normal normal 300 22px/43px Roboto;
+}
+
+.home-content > aside > img {
+  float: left;
+}
+
 /*footer*/
 
 footer {
   background-color: #e8e8e8;
   font-weight: 300;
-  padding: 50px;
+  padding-top: 40px;
+  padding-bottom: 53px;
   margin-bottom: 16px;
   font-size: 18px;
   color: #2b2b2b;
@@ -338,7 +345,7 @@ footer {
 }
 
 .footer-inner ul {
-  width: 176px;
+  width: 211px;
 }
 
 .footer-inner li {
@@ -347,17 +354,49 @@ footer {
 
 .footer-nav {
   display: flex;
-  gap: 60px;
-  margin-bottom: 40px;
+  gap: 202px;
+  font: normal normal normal 22px/37px Playfair Display;
+  letter-spacing: 0.52px;
+  color: #2b2b2b;
+  text-transform: lowercase;
+  opacity: 1;
 }
 
 .footer-newsletter {
-  display: grid;
+  display: block;
 }
 
 .social-media ul {
   display: inline-flex;
   justify-content: space-between;
-  padding-top: 12px;
-  font-size: 14px;
+
+  font-size: 22px;
+}
+
+.footer-connect .footer-newsletter {
+  text-align: left;
+  font: normal normal normal 22px/37px Playfair Display;
+  letter-spacing: 0.33px;
+  color: #2b2b2b;
+  text-transform: lowercase;
+  opacity: 1;
+}
+
+.footer-newsletter > input {
+  width: 190px;
+  height: 20px;
+}
+
+.footer-newsletter > button {
+  display: block;
+  margin: 18px 0px 33px 0px;
+  text-align: center;
+  font: normal normal normal 12px/22px Roboto;
+  letter-spacing: 0.48px;
+  opacity: 1;
+}
+
+.footer-connect .social-media > ul {
+  opacity: 1;
+  width: 120px;
 }

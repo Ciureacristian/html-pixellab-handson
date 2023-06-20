@@ -78,15 +78,23 @@
         <section class="header-controls">
           <ul>
             <li class="header-account">
-              <input
-                type="text"
-                name="Search"
-                id="Search"
-                placeholder="Search"
-              >
-              <span class="icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </span>
+
+              <div class="search">
+                <span class="fa fa-search"></span>
+                <input placeholder="Search term">
+              </div>
+              <!-- <div>
+                <input
+                  type="text"
+                  name="Search"
+                  id="Search"
+                  placeholder="Search"
+                >
+                <span class="icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div> -->
+
             </li>
 
             <li>
@@ -665,11 +673,13 @@
           </li>
         </ul>
 
-        <footer class="product-tile-controls">
-          <a href="/">
-            <h1>View all</h1>
-          </a>
-        </footer>
+        <div class="vertical-container">
+          <div class="vertical-center">
+            <button>
+              View all
+            </button>
+          </div>
+        </div>
       </div>
 
       <hr>
@@ -821,12 +831,22 @@
           </li>
         </ul>
 
-        <footer class="product-tile-controls">
-          <a href="">
-            <h1>View all</h1>
-          </a>
-        </footer>
+        <div class="vertical-container">
+          <div class="vertical-center">
+            <button>
+              View all
+            </button>
+          </div>
+        </div>
+        <!-- <footer class="product-tile-controls">
+            <a href="">
+              <h1>View all</h1>
+            </a>
+          </footer> -->
+
       </div>
+
+
       <!--<button class="heart-btn">
                       <i class="fa-regular fa-heart"></i>
                     </button>-->

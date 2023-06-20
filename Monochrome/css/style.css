@@ -158,12 +158,11 @@ a {
 }
 
 .header-secondary {
-  background: transparent url('/Monochrome/images/banner/banner.png') 0% 0%
+  background: transparent url('../../Monochrome/images/banner/banner.png') 0% 0%
     no-repeat padding-box;
   opacity: 1;
   background-size: cover;
   background-position: center center;
-  max-width: 1920px;
   height: 500px;
   text-transform: uppercase;
   color: #ffffff;
@@ -188,6 +187,42 @@ a {
   display: inline-flex;
   font: normal normal normal 16px/37px Playfair Display;
   letter-spacing: 0.24px;
+}
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.search {
+  display: inline-block;
+}
+
+.search input {
+  width: 250px;
+  height: 32px;
+
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  margin-top: -15px;
+}
+
+.search input {
+  text-indent: 32px;
+}
+.search .fa-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.search .fa-search {
+  left: 10px;
+  right: auto;
+  margin-top: -8px;
 }
 
 .header-controls ul {
@@ -362,15 +397,15 @@ footer {
   opacity: 1;
 }
 
-.footer-newsletter {
-  display: block;
-}
-
 .social-media ul {
   display: inline-flex;
   justify-content: space-between;
 
   font-size: 22px;
+}
+
+.footer-newsletter {
+  display: block;
 }
 
 .footer-connect .footer-newsletter {
@@ -399,4 +434,20 @@ footer {
 .footer-connect .social-media > ul {
   opacity: 1;
   width: 120px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vertical-container {
+  height: 72px;
+  position: relative;
+  background: #fff;
+  padding-bottom: 52px;
 }

@@ -127,7 +127,122 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Thin.woff2') format('woff2'),
+    url('../fonts/Roboto-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Julius Sans One';
+  src: url('../fonts/JuliusSansOne-Regular.woff2') format('woff2'),
+    url('../fonts/JuliusSansOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+    url('../fonts/Roboto-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+    url('../fonts/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+    url('../fonts/Roboto-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-LightItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 /*fonts*/
 
 body {
@@ -151,10 +266,6 @@ a {
 .header {
   height: 500px;
   width: 100%;
-  max-width: 1920px;
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .header-secondary {
@@ -171,22 +282,23 @@ a {
 .header-secondary-inner {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding: 0 150px;
+  box-sizing: border-box;
 }
 
 .header-connect ul {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
-  width: 450px;
-  height: 16px;
+  gap: 26px;
+  padding-top: 22px;
 }
 
 .header-connect li {
   display: inline-flex;
-  font: normal normal normal 16px/37px Playfair Display;
+  font: normal normal normal Playfair Display;
   letter-spacing: 0.24px;
+  padding-top: 18px;
 }
 
 .search {
@@ -202,7 +314,6 @@ a {
 .search input {
   width: 250px;
   height: 32px;
-
   background: #fcfcfc;
   border: 1px solid #aaa;
   border-radius: 5px;
@@ -228,17 +339,31 @@ a {
 .header-controls ul {
   display: inline-flex;
   justify-content: space-between;
-  align-items: right;
-  gap: 8px;
+  align-items: center;
+  gap: 26px;
+  padding-top: 22px;
   color: #111111;
 }
 
-/*.header-account .icon {
-  position: absolute;
-  top: 5%;
-  right: 287px;
-  transform: translate(-1px, -4px);
-}*/
+.header-controls input {
+  font-size: 19px;
+  padding: 8px 6px 8px 6px;
+  border: none;
+}
+
+.header-controls button {
+  font-size: 19px;
+  opacity: 1;
+  background: none;
+  border: none;
+  padding: 8px 10px;
+}
+
+.header-controls form {
+  border: 1px solid #cccccc;
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 .header-primary {
   background-color: #2b2b2b;
@@ -264,6 +389,11 @@ a {
   text-align: center;
   letter-spacing: 0.28px;
 }
+
+.header-primary a:hover {
+  color: #ff6b6b;
+  transition: color 0.2s linear;
+}
 /*header*/
 
 .home-catalog-preview > header {
@@ -275,9 +405,12 @@ a {
   opacity: 1;
   padding: 30px;
   font: normal normal bold 35px/47px Playfair Display;
+  border-top: 1px solid #cccccc;
+  margin-top: 22px;
+  opacity: 1;
 }
 
-.home-catalog-preview .product-titles {
+.home-catalog-preview .product-tiles {
   display: flex;
   justify-content: space-between;
   margin-bottom: 42px;
@@ -289,10 +422,14 @@ a {
   text-align: center;
   opacity: 1;
   letter-spacing: 0.79px;
-  padding-top: 21px;
-  padding-bottom: 8px;
+  margin-top: 21px;
+  margin-bottom: 8px;
   font: normal normal bold 22px/39px Playfair Display;
   text-transform: uppercase;
+}
+
+.content > section {
+  margin-bottom: 64px;
 }
 
 .home-catalog-preview .product-tile-pricing {
@@ -319,21 +456,39 @@ a {
   cursor: pointer;
 }
 
-.product-titles .product-tile-images > i {
+/*.product-titles .product-tile-images > i {
   position: absolute;
   top: 0;
   right: 0;
   display: inline-block;
   position: relative;
 }
-/*background-color: none;
-  text-align: center;
-  font: normal normal normal 22px/22px Roboto;
-  letter-spacing: 0.88px;
-  color: #2b2b2b;
-  opacity: 1;
-  border: 1px solid #2b2b2b;
 */
+
+.product-tile-header {
+  position: relative;
+}
+
+.product-tile-header .heart-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  opacity: 1;
+}
+
+.product-tile-header .heart-btn:hover {
+  color: #ff6b6b;
+  transition: color 0.2s linear;
+}
+
+.product-tile .product-fav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+}
 
 .home-content {
   display: flex;
@@ -363,14 +518,35 @@ a {
   float: left;
 }
 
+.product-tiles > .catalog-ctas > a {
+  display: inline-block;
+  align-items: center;
+  border: 1px solid #2b2b2b;
+  opacity: 1;
+  background: #fff;
+  font: normal normal normal 22px/22px Roboto;
+  letter-spacing: 0.88px;
+  padding: 12px 6px;
+  font-size: 16px;
+}
+
+.catalog-ctas {
+  margin: auto;
+  text-align: center;
+}
+
+.product-tiles > footer {
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
 /*footer*/
 
-footer {
+.footer {
   background-color: #e8e8e8;
   font-weight: 300;
   padding-top: 40px;
   padding-bottom: 53px;
-  margin-bottom: 16px;
   font-size: 18px;
   color: #2b2b2b;
 }
@@ -423,6 +599,7 @@ footer {
 }
 
 .footer-newsletter > button {
+  flex-direction: column;
   display: block;
   margin: 18px 0px 33px 0px;
   text-align: center;

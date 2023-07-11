@@ -29,8 +29,8 @@
 <body>
 
 
-  <header class="header-secondary">
-    <main class="header-container">
+  <header class="header">
+    <section class="header-secondary">
       <div class="header-secondary-inner container">
 
         <section class="header-connect">
@@ -78,22 +78,21 @@
         <section class="header-controls">
           <ul>
             <li class="header-account">
-
-              <div class="search">
-                <span class="fa fa-search"></span>
-                <input placeholder="Search term">
-              </div>
-              <!-- <div>
+              <form>
                 <input
-                  type="text"
-                  name="Search"
-                  id="Search"
+                  type="search"
+                  name="search-bar"
+                  class="search-input"
+                  id="search-bar"
                   placeholder="Search"
+                  required
                 >
-                <span class="icon">
+                <button type="submit">
                   <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
-              </div> -->
+                </button>
+              </form>
+
+
 
             </li>
 
@@ -127,12 +126,12 @@
 
         </section>
       </div>
-    </main>
+    </section>
   </header>
 
   <div class="header-primary">
-    <section class="header-primary-inner container">
-      <ul class="container">
+    <nav class="header-primary-inner container">
+      <ul>
         <li>
           <a
             href="/"
@@ -187,17 +186,18 @@
           </a>
         </li>
       </ul>
-    </section>
+    </nav>
   </div>
 
-  <main class="contant">
-    <div class="home-catalog-preview container">
+
+  <main class="content">
+    <header class="home-catalog-preview container">
       <section class="home-catalog-preview">
         <header>
-          <h1><span>New Staff</span></h1>
+          New Staff
         </header>
 
-        <ul class="product-titles">
+        <ul class="product-tiles">
           <li>
             <article class="product-tile">
               <header class="product-tile-header">
@@ -213,6 +213,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -248,6 +251,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -283,6 +289,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -318,6 +327,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -339,15 +351,15 @@
           </li>
         </ul>
       </section>
-      <hr>
+
       <!--/home-catalog-preview-->
 
-      <div class="home-catalog-preview">
+      <section class="home-catalog-preview">
         <header>
-          <h1><span>Most Loved</span></h1>
+          Most Loved
         </header>
 
-        <ul class="product-titles">
+        <ul class="product-tiles">
           <li>
             <article class="product-tile">
               <header class="product-tile-header">
@@ -360,11 +372,14 @@
                       src="images/Recently Viewed Thumbnail 2-4.png"
                       alt="Monochrome"
                     >
-                    <i class="fa-regular fa-heart"></i>
+
                   </a>
 
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -400,6 +415,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -435,6 +453,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -470,6 +491,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -490,10 +514,10 @@
             <!--/product-title-->
           </li>
         </ul>
-      </div>
+      </section>
 
 
-      <div class="home-content">
+      <section class="home-content">
         <aside>
           <img
             src="images/oliver-pecker-HONJP8DyiSM-unsplash.png"
@@ -520,16 +544,16 @@
 
 
 
-      </div>
+      </section>
 
-      <hr>
 
-      <div class="home-catalog-preview">
+
+      <section class="home-catalog-preview">
         <header>
-          <h1><span>Men's</span></h1>
+          Men's
         </header>
 
-        <ul class="product-titles">
+        <ul class="product-tiles">
           <li>
             <article class="product-tile">
               <header class="product-tile-header">
@@ -545,6 +569,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -580,6 +607,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -617,6 +647,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -652,6 +685,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -673,23 +709,23 @@
           </li>
         </ul>
 
-        <div class="vertical-container">
-          <div class="vertical-center">
-            <button>
-              View all
-            </button>
-          </div>
-        </div>
-      </div>
+        <header class="button-ctas">
+          <ul class="product-tiles">
+            <footer class="catalog-ctas">
+              <a href="">View all</a>
+            </footer>
+          </ul>
+        </header>
+      </section>
 
-      <hr>
 
-      <div class="home-catalog-preview">
+
+      <section class="home-catalog-preview">
         <header>
-          <h1><span>Women's</span></h1>
+          Women's
         </header>
 
-        <ul class="product-titles">
+        <ul class="product-tiles">
           <li>
             <article class="product-tile">
               <header class="product-tile-header">
@@ -705,6 +741,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -740,6 +779,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -773,8 +815,11 @@
                       alt="Monochrome"
                     >
                   </a>
-
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -810,6 +855,9 @@
                   </a>
 
                 </picture>
+                <span class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
                 <!--/product-tile-images!-->
                 <h1 class="product-tile-title">
                   <a
@@ -831,62 +879,50 @@
           </li>
         </ul>
 
-        <div class="vertical-container">
-          <div class="vertical-center">
-            <button>
-              View all
-            </button>
-          </div>
-        </div>
-        <!-- <footer class="product-tile-controls">
-            <a href="">
-              <h1>View all</h1>
-            </a>
-          </footer> -->
-
-      </div>
+        <header class="button-ctas">
+          <ul class="product-tiles">
+            <footer class="catalog-ctas">
+              <a href="">View all</a>
+            </footer>
+          </ul>
+        </header>
 
 
-      <!--<button class="heart-btn">
-                      <i class="fa-regular fa-heart"></i>
-                    </button>-->
+      </section>
+    </header>
   </main>
 
   <!--footer-->
-  <footer>
-    <section class="footer-inner container">
-      <section class="footer-contact">
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div class="footer-contact">
         <nav class="footer-nav">
           <ul>
             <li>
               <a
-                href="/"
-                title="call us"
-              >
-                call Us
+                href="tel:+"
+                title="call Us"
+              >call Us
               </a>
             </li>
 
             <li>
               <a
-                href="+44 (0)10 2345 6789"
-                title="Call us"
-              >+44 (0)10 2345 6789</a>
+                href="tel:+"
+                title="mobile"
+              >+44 (0)10 2345 6789
+              </a>
             </li>
 
             <li>
               <a
-                href="/"
-                title="email costumer care"
-              >email costumer care</a>
+                href="mailto:"
+                title="email"
+              >email costumer care
+              </a>
             </li>
 
-            <li>
-              <a
-                href="/"
-                title="see mobile version"
-              >see mobile version</a>
-            </li>
+
           </ul>
 
           <ul>
@@ -959,12 +995,12 @@
             </li>
           </ul>
         </nav>
-      </section>
+      </div>
       <!--/footer-nav-->
 
       <div class="footer-connect">
         <form class="footer-newsletter">
-          <p>sign up for newsletter</p>
+          <label>sign up for newsletter</label>
           <input
             type="text"
             title="Email Address"
@@ -1009,7 +1045,7 @@
             </li>
         </section>
       </div>
-    </section>
+    </div>
   </footer>
   <!--/footer-->
 

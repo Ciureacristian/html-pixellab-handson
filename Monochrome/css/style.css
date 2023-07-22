@@ -391,6 +391,9 @@ a {
 }
 
 .header-primary a:hover {
+  width: 100px;
+  height: 2px;
+  border-bottom: 2px solid #ff6b6b;
   color: #ff6b6b;
   transition: color 0.2s linear;
 }
@@ -455,15 +458,6 @@ a {
   opacity: 1;
   cursor: pointer;
 }
-
-/*.product-titles .product-tile-images > i {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: inline-block;
-  position: relative;
-}
-*/
 
 .product-tile-header {
   position: relative;

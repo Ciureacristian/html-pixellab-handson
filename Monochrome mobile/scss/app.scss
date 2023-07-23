@@ -690,6 +690,85 @@ a {
   box-sizing: border-box;
 }
 
+.home-content-product {
+  display: flex;
+}
+
+.home-content-product .watch-primary {
+  height: 520px;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.home-content-product .images-product {
+  justify-content: space-around;
+  height: 116px;
+  display: flex;
+}
+
+.home-content-product .images-product > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #000;
+  font-size: 42px;
+}
+
+.home-content-product .images-product > img {
+  margin-right: 10px;
+}
+
+.home-content-product .image-products > p {
+  text-align: center;
+  text-decoration: underline;
+  font: normal normal normal 22px/22px Playfair Display;
+  letter-spacing: 0.11px;
+  color: #2b2b2b;
+  text-transform: lowercase;
+  opacity: 1;
+  margin-top: 28px;
+}
+
+.home-content-product .description-product {
+  flex-direction: column;
+  display: flex;
+  margin-right: 106px;
+  font: normal normal bold 25px/22px Playfair Display;
+  letter-spacing: 0.13px;
+  color: #2b2b2b;
+  opacity: 1;
+  margin-left: 124px;
+}
+.home-content-product .description-product > h1 {
+  letter-spacing: 0.13px;
+  color: #2b2b2b;
+  opacity: 1;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 32px;
+}
+
+.home-content-product .description-product > ul > li {
+  letter-spacing: 0.1px;
+  color: #2b2b2b;
+  text-transform: lowercase;
+  opacity: 1;
+  font-size: 22px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.home-content-product .description-product > p {
+  text-align: left;
+  font: normal normal normal 18px/22px Roboto;
+  letter-spacing: 0.09px;
+  color: #2b2b2b;
+  opacity: 1;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #cccccc;
+}
+
 /*footer*/
 
 .footer {

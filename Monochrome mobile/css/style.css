@@ -12412,6 +12412,15 @@ a {
   padding: 6px 6px;
 }
 
+.home-catalog-preview .product-header-tile {
+  text-align: center;
+  font: normal normal normal 30px/40px Playfair Display;
+  letter-spacing: 0px;
+  color: #2b2b2b;
+  opacity: 1;
+  font-size: 36px;
+}
+
 .product-tile .catalog-ctas-men > a {
   text-align: center;
   font: normal normal bold 16px/37px Playfair Display;
@@ -12670,6 +12679,25 @@ a {
   background: #e8e8e8 0% 0% no-repeat padding-box;
   opacity: 1;
   border: 1px solid #e8e8e8;
+}
+
+.detail-product {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  padding-top: 24px;
+  font: normal normal 300 18px/22px Roboto;
+  letter-spacing: 0.09px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  opacity: 1;
+  font-size: 22px;
+}
+
+.detail-product > ul {
+  border-right: 1px solid #ccc;
+  padding-right: 22px;
 }
 
 /*footer*/

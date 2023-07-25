@@ -121,7 +121,7 @@
                 href="/"
                 title="Add to cart"
               >
-                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
               </a>
             </li>
           </ul>
@@ -191,7 +191,7 @@
   <!--/header-men-->
 
   <main class="content">
-    <section class="home-content-product container">
+    <header class="home-content-product container">
       <aside class="image-products">
         <img
           src="images/Recently Viewed Thumbnail 2-5.png"
@@ -228,22 +228,95 @@
       <section class="description-product">
 
         <h1>Monochrome Max Bill - $725</h1>
-        <ul>
-          <li>description</li>
-        </ul>
-        <p>
+        <div class="description-product-details">description <span>-</span></div>
+        <p class="text-description">
           Mr Max Bill was a true creative genius, carving out a career as a painter, architect, sculptor and designer.
           As well as leaving behind an expansive body of work, he was also an avid collector of watches, and this
           Junghans chronoscope timepiece is dedicated to his memory. Immaculately housed in a domed Plexiglass case and
           finished with a handsome leather strap, it's a highly technical piece in a stylish package.
         </p>
-        <ul>
-          <li>size & fit</li>
-          <li>details & care</li>
-          <li>delivery & returns</li>
-        </ul>
+
+        <div class="description-product-details">size & fit <span>+</span></div>
+        <div class="description-product-details">details & care <span>+</span></div>
+        <div class="description-product-details">delivery & returns <span>+</span></div>
+
+
+        <section class="product-controls">
+          <ul>
+            <li class="product-account-ctas">
+              <form>
+                <input
+                  type="submit"
+                  value="ADD TO BAG"
+                  placeholder="ADD TO BAG"
+                  name="ADD TO BAG"
+                  class="submit-product"
+                  required
+                >
+
+                <button type="ADD TO BAG">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="product-account-ctas">
+              <form>
+                <input
+                  type="submit"
+                  value="WISHLIST"
+                  placeholder="ADD TO BAG"
+                  name="ADD TO BAG"
+                  class="wishlist-product"
+                  required
+                >
+
+                <button type="WISHLIST">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </form>
+          </ul>
+          </form>
+        </section>
+
+        <p class="text-product">SHIPPING RESTRICTIONS MAY APPLY</p>
+
+        <section class="product-connect">
+          <ul>
+            <li>
+              <a
+                href="/"
+                title="Youtube"
+              ><i class="fa-brands fa-youtube"></i></a>
+            </li>
+
+            <li>
+              <a
+                href="/"
+                title="Twitter"
+              ><i class="fa-brands fa-twitter"></i></a>
+            </li>
+
+            <li>
+              <a
+                href="/"
+                title="Facebook"
+              ><i class="fa-brands fa-facebook"></i></a>
+            </li>
+
+            <li>
+              <a
+                href="/"
+                title="Instagram"
+              ><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </section>
+
+
       </section>
-    </section>
+    </header>
 
   </main>
   <!--/main-->

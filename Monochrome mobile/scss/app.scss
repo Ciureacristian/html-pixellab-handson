@@ -526,11 +526,6 @@ a {
   cursor: pointer;
 }
 .home-catalog-preview-tile > span {
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
-    var(--unnamed-font-size-35) / var(--unnamed-line-spacing-47)
-    var(--unnamed-font-family-playfair-display);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-2b2b2b);
   text-align: center;
   font: normal normal bold 35px/47px Playfair Display;
   letter-spacing: 0px;
@@ -540,8 +535,6 @@ a {
 }
 
 .home-catalog-preview-tile > p {
-  font: var(--unnamed-font-style-normal) normal 300 25px/33px
-    var(--unnamed-font-family-roboto);
   text-align: left;
   font: normal normal 300 25px/33px Roboto;
   letter-spacing: 1px;
@@ -577,10 +570,6 @@ a {
 }
 
 .product-tile .catalog-ctas-men > a {
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
-    var(--unnamed-font-size-16) / var(--unnamed-line-spacing-37)
-    var(--unnamed-font-family-playfair-display);
-  letter-spacing: var(--unnamed-character-spacing-0-24);
   text-align: center;
   font: normal normal bold 16px/37px Playfair Display;
   letter-spacing: 0.24px;
@@ -601,11 +590,6 @@ a {
 }
 
 .product-tile .catalog-ctas-white > a {
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
-    var(--unnamed-font-size-16) / var(--unnamed-line-spacing-37)
-    var(--unnamed-font-family-playfair-display);
-  letter-spacing: var(--unnamed-character-spacing-0-24);
-  color: var(--unnamed-color-2b2b2b);
   text-align: center;
   font: normal normal bold 16px/37px Playfair Display;
   letter-spacing: 0.24px;
@@ -613,6 +597,28 @@ a {
   text-transform: uppercase;
   opacity: 1;
   padding: 0px 33px;
+}
+
+.home-content-product .text-product {
+  text-align: center;
+  text-decoration: underline;
+  font: normal normal normal 22px/22px Playfair Display;
+  letter-spacing: 0.11px;
+  color: #2b2b2b;
+  text-transform: lowercase;
+  opacity: 1;
+  margin-top: 28px;
+}
+
+.home-content-product .product-connect > ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+  padding-top: 22px;
+  margin: 10px 132px;
+  font-size: 42px;
 }
 
 .product-tile-header {
@@ -720,17 +726,6 @@ a {
   margin-right: 10px;
 }
 
-.home-content-product .image-products > p {
-  text-align: center;
-  text-decoration: underline;
-  font: normal normal normal 22px/22px Playfair Display;
-  letter-spacing: 0.11px;
-  color: #2b2b2b;
-  text-transform: lowercase;
-  opacity: 1;
-  margin-top: 28px;
-}
-
 .home-content-product .description-product {
   flex-direction: column;
   display: flex;
@@ -747,9 +742,10 @@ a {
   opacity: 1;
   border-bottom: 1px solid #cccccc;
   margin-bottom: 32px;
+  padding-bottom: 12px;
 }
 
-.home-content-product .description-product > ul > li {
+.home-content-product .description-product-details {
   letter-spacing: 0.1px;
   color: #2b2b2b;
   text-transform: lowercase;
@@ -757,9 +753,16 @@ a {
   font-size: 22px;
   margin-bottom: 32px;
   border-bottom: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
 }
 
-.home-content-product .description-product > p {
+.home-content-product .description-product-details :nth-child(1) {
+  border-bottom: none;
+}
+
+.description-product .text-description {
   text-align: left;
   font: normal normal normal 18px/22px Roboto;
   letter-spacing: 0.09px;
@@ -769,6 +772,60 @@ a {
   border-bottom: 1px solid #cccccc;
 }
 
+.description-product .text-product {
+  text-align: center;
+  text-decoration: underline;
+  font: normal normal normal 22px/22px Playfair Display;
+  letter-spacing: 0.11px;
+  color: #2b2b2b;
+  text-transform: lowercase;
+  opacity: 1;
+  margin-top: 28px;
+  padding-bottom: 12px;
+  border-bottom: none;
+}
+.product-controls {
+  display: flex;
+}
+
+.product-account-ctas > form {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.product-account-ctas .submit-product {
+  text-align: center;
+  font: normal normal normal 16px/22px Roboto;
+  letter-spacing: 0.64px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  background: #2b2b2b 0% 0% no-repeat padding-box;
+  padding: 10px 20px;
+}
+
+.product-coontrols .submit-product > button {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 0.5px solid #707070;
+  opacity: 1;
+}
+
+.product-account-ctas .wishlist-product {
+  border: 1px solid #e8e8e8;
+  opacity: 1;
+  text-align: center;
+  font: normal normal normal 16px/22px Roboto;
+  letter-spacing: 0.64px;
+  background: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.wishlist-product > button {
+  background: #e8e8e8 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border: 1px solid #e8e8e8;
+}
 /*footer*/
 
 .footer {
